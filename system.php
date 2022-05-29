@@ -68,8 +68,9 @@ if (isset($_POST['falekle'])) {
   @$tmp_name = $_FILES['fotograf']["tmp_name"];
   @$name = $_FILES['fotograf']["name"];
 
-  $refimgyol = 'assets/img/fortunes/' . $name;
-  @move_uploaded_file($tmp_name, "$uploads_dir/$name");
+  $random = rand(10000, 99999);
+  $refimgyol = 'assets/img/fortunes/' . $random . $name;
+  @move_uploaded_file($tmp_name, "$uploads_dir/" . "$random"."$name");
 
   $falkaydet = $db->prepare("INSERT INTO fallar SET
     baslik=:baslik,

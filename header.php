@@ -57,7 +57,7 @@ if (!isset($_SESSION['kullanici_adi'])) {
               <a class="nav-link text-warning fw-bold p-2 shadow-sm" href="index.php?user_id=<?=$kullanicicek['id']?>"><i class="fas fa-coffee"></i> Fallarım</a>
             </li>
             <li class="nav-item m-2">
-              <a class="nav-link text-success fw-bold p-2 shadow-sm" href="#"><i class="fas fa-comment"></i> Yorumlarım</a>
+              <a class="nav-link text-success fw-bold p-2 shadow-sm" href="index.php?yorumcu_id=<?=$kullanicicek['id']?>"><i class="fas fa-comment"></i> Yorumlarım</a>
             </li>
           </ul>
           <div>

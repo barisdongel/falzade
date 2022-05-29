@@ -31,7 +31,7 @@
         <form class="bg-white p-5 montserrat rounded-3 shadow" action="system.php" name="signin" method="POST" enctype="multipart/form-data">
           <div class="mb-3">
             <label>Fotoğraf Seçiniz</label>
-            <input type="file" name="fotograf" required>
+            <input type="file" class="form-control" name="fotograf" required>
           </div>
           <div class="mb-3">
             <input type="text" name="kullanici_adi" placeholder="Kullanıcı Adı" class="form-control p-2" id="InputEmail" aria-describedby="emailHelp" required>

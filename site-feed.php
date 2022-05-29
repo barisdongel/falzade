@@ -1,14 +1,47 @@
 <?php
-if ($_GET) {
-    $falgetir = $db->prepare("SELECT * FROM fallar where user_id=:id");
-    $falgetir->execute(array('id' => $_GET['user_id']));
+if (!empty($_GET)) {
+    if (!empty($_GET['user_id'])) {
+        $falgetir = $db->prepare("SELECT * FROM fallar where user_id=:id");
+        $falgetir->execute(array('id' => $_GET['user_id']));
+    } elseif (!empty($_GET['yorumcu_id'])) {
+        $falgetir = $db->prepare("SELECT * FROM yorumlar where user_id=:id");
+        $falgetir->execute(array('id' => $_GET['yorumcu_id']));
+
+        $usergetir = $db->prepare("SELECT * FROM kullanicilar where id=:user_id");
+        $usergetir->execute(array('user_id' => $_GET['yorumcu_id']));
+        $usercek = $usergetir->fetch(PDO::FETCH_ASSOC);
+
+        foreach ($falgetir as $rows) { ?>
+            <!--Yorumlar Alanı-->
+            <div class="shadow-sm w-100 rounded-3">
+                <div class="card-body">
+                    <div class="comments">
+                        <div class="user mb-3 mt-3">
+                            <div class="comment-action">
+                                <div class="user mb-3 mt-3">
+                                    <img src="<?= $usercek['fotograf'] ?>" class="rounded-0" alt="user" width="10%">
+                                    <a href="profile.php?id=<?= $usercek['id'] ?>" class="text-decoration-none text-success fw-bold"><?= $usercek['isim'] ?></a>
+                                </div>
+                                <p class="text-muted"><?= $rows['yorum'] ?></p>
+                                <nav class="nav">
+                                    <a class="nav-link text-dark" href="fortune-detail.php?id=<?=$rows['fal_id']?>"><i class="fas fa-link text-info"></i> Fal'a Git</a>
+                                    <a class="nav-link text-dark" href="system.php?yorumsil=ok&url=<?= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>&id=<?= $rows['id'] ?>"><i class="fas fa-trash text-danger"></i> Yorumu Sil</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+        <!--Yorumlar Alanı Son-->
+    <?php  }
 } else {
     $falgetir = $db->prepare("SELECT * FROM fallar ORDER BY id DESC");
     $falgetir->execute(array());
 }
 foreach ($falgetir as $rows) {
     $id = $rows['id'];
-?>
+    ?>
     <div class="shadow-sm w-100 rounded-3">
         <?php
         $usergetir = $db->prepare("SELECT * FROM kullanicilar where id=:user_id");
