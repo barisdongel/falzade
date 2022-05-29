@@ -1,0 +1,60 @@
+/*login page*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*Login page*/
+#login{
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (min-width: 350px) {
+	#login{
+		height: 700px;
+	}
+	.kullanici .justify-content-end{
+		justify-content: flex-start !important;
+	}
+	.dropdown-menu-end{
+		left:0 !important;
+		right: auto !important;
+	}
+}
+@media (min-width: 900px) {
+	#login{
+		height: 600px;
+	}
+	.kullanici .justify-content-end{
+		justify-content: flex-end !important;
+	}
+	.dropdown-menu-end{
+		left:auto !important;
+		right: 0 !important;
+	}
+}
+@media (min-width: 1500px) {
+	#login{
+		height: 900px;
+	}
+	.kullanici .justify-content-end{
+		justify-content: flex-end !important;
+	}
+	.dropdown-menu-end{
+		left:auto !important;
+		right: 0 !important;
+	}
+}
+/*feed page*/
+.montserrat{
+	font-family: 'Montserrat', sans-serif !important;
+}
+.ust-header{
+	background-color: #ddd;
+	padding-right: 55px;
+}
+.social a{
+	padding: 0px 18px;
+	margin: 4px;
+	font-size: 18px;
+}
+.user{margin-left: 10px;}
+.stats{margin-left: 30%;}
