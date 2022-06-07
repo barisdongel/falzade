@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Berrin Kocabıyık, Barış Ömer Döngel">
+  <meta name="description" content="Falını paylaş veya diğer insanların fallarını yorumla.">
+  <meta name="keywords" content="fal, kahve falı, tarrot, kahve, falcılık, fal bakma, falzade">
+
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Style CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Anasayfa</title>
+</head>
+<body style="background-color:#fefeff;">
+  <header class="mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light montserrat">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
+            <li class="nav-item m-2">
+              <a class="nav-link text-primary fw-bold p-2 shadow-sm" href="#"><i class="fas fa-rss-square"></i> Akış</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link text-warning fw-bold p-2 shadow-sm" href="#"><i class="fas fa-coffee"></i> Fallarım</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link text-success fw-bold p-2 shadow-sm" href="#"><i class="fas fa-comment"></i> Yorumlarım</a>
+            </li>
+          </ul>
+          <div>
+            <li class="nav-item dropdown d-flex kullanici">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/img/users/user-man1.png" height="50">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end rounded-0" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> Profil</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Ayarlar</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Çıkış Yap</a></li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="feed">
+    <div class="container">
+      <div class="row">
+        <!--sol-->
+        <div class="col-md-3 mt-5 d-none d-sm-block">
+          <div class="about-us mb-5">
+            <h5 class="text-center montserrat border-bottom border-success p-3">Falzade Hakkında</h5>
+            <p class="text-center"><span class="text-success">Falzade</span> insanların fallarını paylaşıp, başkalarının fallarına <span class="text-success">yorum yapabildiği</span>, ve beğenilen yorumların yine kullanıcılar tarafından <span class="text-success">bağış sistemi ile desteklenebildiği</span> bir sosyal medya falcılık platformudur.</p>
+          </div>
+          <div class="info-tab">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="text-success rounded-0 nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Nasıl Başladı ?</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="text-success rounded-0 nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nasıl Çalışır ?</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card shadow-sm rounded-0">
+                  <img src="https://1.bp.blogspot.com/-s5Ow1IgWvT0/WViMW61qFqI/AAAAAAAAArE/MxtR6Yalkl8OcjT4TO3l3B9jvG9dFpkBQCLcBGAs/s1600/R%25C3%25BCyada-Fal-Bakt%25C4%25B1rmak-G%25C3%25B6rmek.jpg" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">
+                    <p class="card-text" style="text-align:justify;">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card shadow-sm rounded-0">
+                  <img src="https://www.gursesgazetesi.com/images/haberler/2019/03/falcilik-buyuculuk-ufurukculuk-suc-mudur-yasak-midir-falcilik-ufurukculuk-cezasi-nedir.jpg" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body">
+                    <p class="card-text" style="text-align:justify;">
+                      Kahve falınızın falını çekip Falzade'de paylaşırsınız. Daha sonra yine siteye bizzat üye olan kullanıcılar tarafından falınız <span class="text-success">beğeni ve yorum alabilir</span>. Yorumlarda herkes kendi tarzına göre falınızı yorumlar. En çok beğenilen ve özellikle falı paylaşan kişinin beğendiği yorumlar yukarıda görünür. Çok beğeni alan yorumlarda <span class="text-success">"Bağış Yap"</span>" butonu açılır. Sitede ki üyeler ve isterse falın sahibi, yorumu yapan falcıya bağış yapabilir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="side-footer">
+            <div class="site-menu mt-5">
+              <nav class="nav d-flex justify-content-center border-bottom">
+                <a href="#" class="nav-link text-muted">Hakkımızda</a>
+                <a href="#" class="nav-link text-muted">KVKK</a>
+                <a href="#" class="nav-link text-muted">İletişim</a>
+              </nav>
+            </div>
+            <div class="social">
+              <nav class="nav d-flex justify-content-center">
+                <a href="#" class="nav-link"><i class="fab fa-facebook-square text-primary"></i></a>
+                <a href="#" class="nav-link"><i class="fab fa-instagram text-warning"></i></a>
+                <a href="#" class="nav-link"><i class="fab fa-twitter text-info"></i></a>
+                <a href="#" class="nav-link"><i class="fab fa-youtube text-danger"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--orta-->
+        <div class="col-md-6">
+          <!--Fal paylaş-->
+          <form class="mt-5 p-3 shadow montserrat">
+            <div class="user mb-3">
+              <img src="assets/img/users/user-man1.png" alt="user" width="12%">
+              <a href="#" class="text-decoration-none text-success">Barış</a>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Fal Başlık" aria-describedby="emailHelp">
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Detay</label>
+            </div>
+            <div class="mt-3 mb-3">
+              <label for="formFile" class="form-label fw-bold">Fotoğrafı Yükle</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            <button type="submit" style="text-transform:uppercase;" class="btn btn-success w-100 rounded-0 mt-2"><i class="fas fa-share"></i> Paylaş</button>
+          </form>
+          <!--Fal paylaş Son-->
+
+
+          <div class="feed mt-5 montserrat">
+            <!--İçerik 1-->
+            <div class="shadow-sm w-100 rounded-3">
+              <div class="user mb-3 mt-3">
+                <img src="assets/img/users/user-women.png" class="rounded-0" alt="user" width="10%">
+                <a href="#" class="text-decoration-none text-success fw-bold">Berrin</a>
+              </div>
+              <a href="fortune-detail.html"><img src="http://darniko.com/mag/wp-content/uploads/2017/11/0S2A5674-copy.jpg" class="card-img-top" alt="kahve"></a>
+              <div class="card-body">
+                <div class="action">
+                  <nav class="nav">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-thumbs-up text-danger"></i> 31</a>
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-comment text-success"></i> 2</a>
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-share-alt text-info"></i> Paylaş</a>
+                  </nav>
+                </div>
+                <div class="comments">
+                  <div class="user mb-3 mt-3">
+                    <img src="assets/img/users/user-man2.png" class="rounded-0" alt="user" width="7%">
+                    <a href="#" class="text-decoration-none text-success">Serdar</a>
+                    <p class="pt-2" style="font-size:14px; text-align:justify;">Fal falan bişeyler falan var işte burada belli ki birisi kahve içmiş ve telvesini bırakmış gibi görünüyor. Görünüşe göre kahve Türk kahvesiymiş ve fincanda içilmiş. Tüm bu verilere dayanarak söylemeliyim ki sana 3 vakte kadar Web dersinden kalma görünüyor.</p>
+                    <div class="comment-action">
+                      <nav class="nav">
+                        <a class="nav-link text-dark" href="#"><i class="fas fa-thumbs-up text-danger"></i> 31</a>
+                        <a class="nav-link text-dark" href="#"><i class="fas fa-comment text-success"></i> 2</a>
+                        <a class="nav-link text-dark" href="#"><i class="fas fa-coins text-warning"></i> Bağış Yap</a>
+                      </nav>
+                    </div>
+                    <div class="user mb-3 mt-3">
+                      <img src="assets/img/users/user-man1.png" class="rounded-0" alt="user" width="7%">
+                      <a href="#" class="text-decoration-none text-success">Barış</a>
+                      <p class="pt-2" style="font-size:14px; text-align:justify;">Bu arkadaş fal bakmayı bilmiyor.</p>
+                      <div class="comment-action">
+                        <nav class="nav">
+                          <a class="nav-link text-dark" href="#"><i class="fas fa-thumbs-up text-danger"></i> 2</a>
+                          <a class="nav-link text-dark" href="#"><i class="fas fa-coins text-warning"></i> Bağış Yap</a>
+                        </nav>
+                      </div>
+                    </div>
+                    <a href="#" class="text-muted">Daha fazla yorum göster</a>
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-pill" id="floatingInput" placeholder="Yorum Yap">
+                  <label for="floatingInput">Yorum Yap</label>
+                </div>
+              </div>
+            </div>
+            <!--İçerik 1 son-->
+
+            <!--İçerik 2-->
+            <div class="shadow-sm w-100 rounded-3 mt-5">
+              <div class="user mb-3 mt-3">
+                <img src="assets/img/users/user-man1.png" class="rounded-0" alt="user" width="10%">
+                <a href="#" class="text-decoration-none text-success fw-bold">Barış</a>
+              </div>
+              <img src="https://blog.binnazabla.com/wp-content/uploads/IMG_20130124_105643.jpg" class="card-img-top" alt="kahve">
+              <div class="card-body">
+                <div class="action">
+                  <nav class="nav">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-thumbs-up text-danger"></i> 22</a>
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-comment text-success"></i> 1</a>
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-share-alt text-info"></i> Paylaş</a>
+                  </nav>
+                </div>
+                <div class="comments">
+                  <div class="user mb-3 mt-3">
+                    <img src="assets/img/users/user-women.png" class="rounded-0" alt="user" width="7%">
+                    <a href="#" class="text-decoration-none text-success">Berrin</a>
+                    <p class="pt-2" style="font-size:14px; text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="comment-action">
+                      <nav class="nav">
+                        <a class="nav-link text-dark" href="#"><i class="fas fa-thumbs-up text-danger"></i> 1</a>
+                        <a class="nav-link text-dark" href="#"><i class="fas fa-coins text-warning"></i> Bağış Yap</a>
+                      </nav>
+                    </div>
+                    <a href="#" class="text-muted">Daha fazla yorum göster</a>
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-pill" id="floatingInput" placeholder="Yorum Yap">
+                  <label for="floatingInput">Yorum Yap</label>
+                </div>
+              </div>
+            </div>
+            <!--İçerik 2 son-->
+
+          </div>
+          <!--feed son-->
+
+          <!--load more-->
+          <div class="loadmore text-center m-5 montserrat">
+            <a href="#" class="text-decoration-none text-muted border rounded-pill p-3 shadow-sm">Daha Fazla Göster...</a>
+          </div>
+        </div>
+        <!--Sağ-->
+        <div class="col-md-3 mt-5">
+          <div class="online-users d-none d-sm-block">
+            <h5 class="text-center text-success">Takip Edilenler</h5>
+            <ol class="list-group rounded-0">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-man1.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-decoration-none text-dark">Barış</a></div>
+                  <span class="text-success">Çevrimiçi</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-women2.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-decoration-none text-dark">Leyla</a></div>
+                  <span class="text-success">Çevrimiçi</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-man3.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-decoration-none text-dark">Emre</a></div>
+                  <span class="text-danger">Çevrimdışı</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-women1.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-decoration-none text-dark">Fatma</a></div>
+                  <span class="text-success">Çevrimiçi</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-women.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-decoration-none text-dark">Berrin</a></div>
+                  <span class="text-success">Çevrimiçi</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-man2.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-decoration-none text-dark">Serdar</a></div>
+                  <span class="text-danger">Çevrimdışı</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="weekly-most-liked d-none d-sm-block mt-4">
+            <h5 class="text-center text-success">Haftanın En Çok Beğeni Alan Kullanıcıları</h5>
+            <ol class="list-group d-none d-sm-block list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-women2.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-success">Leyla</a></div>
+                  <span class="fw-bold text-danger"><i class="fas fa-thumbs-up"></i> 45</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-man3.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-success">Emre</a></div>
+                  <span class="fw-bold text-danger"><i class="fas fa-thumbs-up"></i> 34</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-women1.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-success">Fatma</a></div>
+                  <span class="fw-bold text-danger"><i class="fas fa-thumbs-up"></i> 21</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-women.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-success">Berrin</a></div>
+                  <span class="fw-bold text-danger"><i class="fas fa-thumbs-up"></i> 17</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-man1.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-success">Barış</a></div>
+                  <span class="fw-bold text-danger"><i class="fas fa-thumbs-up"></i> 11</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="assets/img/users/user-man2.png" alt="womenuser" class="w-25 p-1">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><a href="#" class="text-success">Serdar</a></div>
+                  <span class="fw-bold text-danger"><i class="fas fa-thumbs-up"></i> 4</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
